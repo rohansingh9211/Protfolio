@@ -1,0 +1,28 @@
+.Skill{
+    background-color: #353d41;
+    height: auto;
+}
+.skill-slide-inside{
+    display: none;
+}
+.skill-slide-inside{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.skill-slide:hover .skill-slide-inside{
+    display: block;
+    opacity: 1;
+}
+.Skill div{
+    border-radius: 12px;
+}
+#skillpart{
+    height: 150vh;
+    display: contents;
+    justify-content: center;
+}
+@media (min-width: 450px) {
+    #skill #skillpart{
+        height: 80vh;
+    }
+}

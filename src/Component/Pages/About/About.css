@@ -1,0 +1,18 @@
+.about {
+    background-color: #adb5bd; 
+    height: fit-content;  
+}
+h3{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: goldenrod;
+}
+.typeWriter2{
+    color: royalblue;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.photoShop{
+    border-radius: 8px;
+}

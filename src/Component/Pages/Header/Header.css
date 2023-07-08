@@ -1,0 +1,44 @@
+.mainPage{
+    background-color: #353d41;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    font-style: normal;
+    color: goldenrod;
+    padding: 12px 2px;
+    margin: 12px ;
+    cursor: pointer;
+} 
+
+strong{
+    color: white;
+}
+p{
+    font-weight: bolder;
+    color: white;
+}
+.typeWriter{
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.someAbout{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+@media (max-width: 790px) {
+    a{
+        display: none;
+    }
+    .logoImage{
+        display: flex;
+        justify-content: center;
+    }
+  }

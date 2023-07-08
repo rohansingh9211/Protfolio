@@ -1,0 +1,19 @@
+.contact{
+    background-color: aquamarine;
+}
+.linkedIn{
+    font-size: 3rem;
+}
+
+@media (max-width:450px){
+    .mail_phone{
+        display: grid;
+    }
+}
+  
+  
+  
+  
+  
+  
+  
