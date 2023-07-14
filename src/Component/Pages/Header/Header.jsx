@@ -10,7 +10,7 @@ const Header = () => {
     },[])
   return (
    <>
-    <div className='container-fluid mainPage' style={{border:"2px solid black"}} id='Header' >
+    <div className='container-fluid mainPage' style={{border:"2px solid transparent"}} id='Header' >
             <div className='row mt-2'>
                 <div className='col-md-3 col-12 logoImage'>
                 <img className='' src={logo} alt="some error" width="190px" height="70px" />

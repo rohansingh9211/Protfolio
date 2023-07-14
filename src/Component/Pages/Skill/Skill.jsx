@@ -102,6 +102,13 @@ const Skill = () => {
                     );
                   })}
                 </div>
+                <div className='box '>
+                    <div className=' detailProject row-col-md-6'>
+                    <p>I Work on many project which based on front-end and back-end development in collage and internship and going on.<br/> 
+                        develop responsive & awsome web-pages and restfull API's...
+                    </p>
+                    </div>
+                </div>
           </div>
     </div>
 
