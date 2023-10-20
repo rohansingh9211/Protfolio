@@ -1,26 +1,84 @@
-.mainPage{
-    background-color: #353d41;
+
+
+.mainPage {
+    background-color: black;
+    position: relative;
 }
+.animate {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example {
+    0%   {background-color:transparent; left:0px; right:0px;}
+    25%  {background-color:yellow; top:0px; right:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; bottom:0px; top:0px;}
+    100% {background-color:red; right:0px; bottom:0px;}
+  }
 a{
     text-decoration: none;
     font-size: larger;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
-    color: goldenrod;
+    color: #0ef;
     padding: 12px 2px;
     margin: 12px ;
     cursor: pointer;
 } 
-
-strong{
-    color: white;
+a:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 20px #0ef;
 }
-p{
-    font-weight: bolder;
-    color: white;
+button:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.heading{
+  margin: 0;
+  font-size: 50px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+@keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+.passion{
+    color: #adb5bd;
+    font-weight: 500;
+    font-family: monospace;
 }
 .typeWriter{
-    color: goldenrod;
+    color: #0ef;
+    font-weight: 200;
     font-weight: bolder;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -46,5 +104,11 @@ a:hover{
     .logoImage{
         display: flex;
         justify-content: center;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    p , .typeWriter{
+        font-size: 20px;
     }
   }

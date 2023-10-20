@@ -1,7 +1,100 @@
 .Skill{
-    background-color: #353d41;
+    background-color: black;
     height: auto;
 }
+.image-slider {
+    position: relative;
+    width: 70%;
+    height: 50vh; 
+    box-shadow: 0 0 30px #0ef;
+    margin: 3%;
+  }
+
+  .image-slider img {
+    position: absolute;
+    width: 100%; /* Set the image width to 100% */
+    height: 100%; /* Set the image height to 100% */
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+
+  .box-shape{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 20px 20px;
+    /* grid-template-rows:50px 20px 20px; */
+    grid-gap: 5px;
+    align-items: center;
+  }
+  .col_skill{
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 1fr;
+    gap: 3%;
+    margin: 12px 0;
+    justify-content: center;
+  }
+  .diff_skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    background-color: #252525;
+    padding: 12px;
+    border: 3px solid #3b3434;
+    margin: 12px 0;
+    position: relative;
+  }
+  .skill_title{
+    position: absolute;
+    bottom: 0;
+    background-color:  rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 8px ;
+    display: flex;
+    justify-content: center;
+  }
+
+#child_skill{
+    box-shadow: 0 0 10px #00bfb6;
+    padding: 5%;
+}
+.progress-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 12px;
+}
+.progress-bar2{
+  width: 100%; 
+  height: 10%; 
+  border: 1px solid grey;
+  background-color: whitesmoke;
+}
+.progress-bar3 {
+    width: 50%; 
+    height: 100%;
+    background-color: rgb(174, 234, 43); 
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-details{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .skill-slide-inside{
     display: none;
 }
@@ -43,8 +136,34 @@
     border-bottom: 10px solid transparent;
     bottom: -16px;
 }
+.internship{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
 @media (min-width: 450px) {
     #skill #skillpart{
         height: 80vh;
     }
+    
+}
+@media (max-width:650px){
+    .image-slider{
+        width: 90%;
+        height: 50vh;
+    }
+    .col_skill{
+        grid-template-columns: 1fr ;
+      }
+      .skill_title{
+        padding: 15px;
+      }
+      .progress-container {
+        width: 90%;
+        height: fit-content;
+      }
+.internship{
+  width: 100%;
+}
 }
